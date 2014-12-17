@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   root 'static#home'
 
   get '/about', to: 'static#about', as: :about
+=======
+  root 'static_pages#home'
+
+  get 'about' => 'static_pages#about'
+>>>>>>> 925f21dc5f2b435c41142747819d338481a2858b
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
